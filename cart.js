@@ -1,4 +1,4 @@
-function addToCart(productName, productPrice, productImage) {
+function addcart(productName, productPrice, productImage) {
     var product = { name: productName, price: productPrice, image: productImage, quantity: 1 };
     var cart = JSON.parse(localStorage.getItem("cart")) || [];
     var existingItem = cart.find(item => item.name === productName);
@@ -115,4 +115,5 @@ function addToCart(productName, productPrice, productImage) {
   
   // Initial cart display update
   updateCartDisplay();
+  
   
