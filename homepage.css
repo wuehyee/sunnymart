@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+
+body {
+    box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1400px;
+    width: 100%;
+    font-size: 16pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
+}
+
+.slide-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.mySlides img {
+    border: 10px inset #3a3f52e4;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    padding-top: 20px;
+    font-style: oblique;
+    color: #e84200;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.text p {
+    color: #ff6600;
+    font-size: 25px;
+    letter-spacing: 0em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 15% 25px 22%;
+}
+
+.product img {
+    object-fit: cover;
+    width: 200px;
+    height: auto;
+    padding: 15px;
+}
+
+.category img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;   
+}
+
+audio {
+    display: block;
+    width: 20%;
+  }
