@@ -18,14 +18,14 @@
 
         <!-- logo -->
         <div class="logo-container">
-            <img src="/icon/logo.png" alt="Sunny Mart logo">
+            <img src="icon/logo.png" alt="Sunny Mart logo">
         </div>
 
         <!-- search bar -->
         <div class="search-container">
             <form action="#" class="search-bar">
                 <input type="text" placeholder="Search..." name="search">
-                <button type="submit"><img src="/icon/search.png" alt="search-btn"></button>
+                <button type="submit"><img src="icon/search.png" alt="search-btn"></button>
             </form>
         </div>
 
@@ -33,7 +33,7 @@
 
         <!--user icon to display form-->
         <div class="user-container">
-            <a href="#" onmouseover="showForm()" onmouseout="hideForm()"><img src="/icon/user.png" alt="user"></a>
+            <a href="#" onmouseover="showForm()" onmouseout="hideForm()"><img src="icon/user.png" alt="user"></a>
             <div id="user-form" class="user-form" onmouseover="showForm()" onmouseout="hideForm()">
                 <ul>
                     <li>
@@ -97,13 +97,13 @@
         <!--notification icon-->
         <div class="Notification">
             <a href="Notification.html">
-            <img src="/icon/bell.png" alt="bell">
+            <img src="icon/bell.png" alt="bell">
             </a>
         </div>
 
         <!--audio icon-->
         <div class="Audio">
-            <img src="/icon/AudioOn.png" alt="" id="audioImage">
+            <img src="icon/AudioOn.png" alt="" id="audioImage">
             <audio id="audioPlayer" src="Brown Sugar.mp3" preload="auto"></audio>
         </div>
 
@@ -112,7 +112,7 @@
         <!--add to cart-->
         <div class="addtocart">
             <a href="cart.html">
-                <img src="/icon/addtocart.png" alt="add to cart">
+                <img src="icon/addtocart.png" alt="add to cart">
             </a>
         </div>
     </div>
@@ -120,51 +120,51 @@
 
     <div class="products">
         <div class="card">
-            <img class="product.img" src="/product/drinks/bundaberg lemon lime & bitter.png" alt="bundaberg-img">
+            <img class="product.img" src="product/drinks/bundaberg lemon lime & bitter.png" alt="bundaberg-img">
             <h1>Bundaberg lemon lime & bitter</h1>
             <p>Drink Products</p>
             <p>RM6.50</p>
-            <button onclick="addToCart('Bundaberg lemon lime & bitter', 6.50, '/product/drinks/bundaberg lemon lime & bitter.png')">Add to Cart</button>
+            <button onclick="addcart('Bundaberg lemon lime & bitter', 6.50, 'product/drinks/bundaberg lemon lime & bitter.png')">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img class="product.img" src="/product/drinks/coke.png" alt="coke-img">
+            <img class="product.img" src="product/drinks/coke.png" alt="coke-img">
             <h1>Coke</h1>
             <p>Drink Products</p>
             <p>RM2.00</p>
-            <button onclick="addToCart('Coke', 2.00, '/product/drinks/coke.png')">Add to Cart</button>
+            <button onclick="addcart('Coke', 2.00, 'product/drinks/coke.png')">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img class="product.img" src="/product/drinks/hundredplus.png" alt="hundredplus-img">
+            <img class="product.img" src="product/drinks/hundredplus.png" alt="hundredplus-img">
             <h1>100 Plus</h1>
             <p>Drink Products</p>
             <p>RM2.00</p>
-            <button onclick="addToCart('100 Plus', 2.00, '/product/drinks/hundredplus.png')">Add to Cart</button>
+            <button onclick="addcart('100 Plus', 2.00, 'product/drinks/hundredplus.png')">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img class="product.img" src="/product/drinks/homesoy.jpg" alt="homesoy-img">
+            <img class="product.img" src="product/drinks/homesoy.jpg" alt="homesoy-img">
             <h1>Home Soy</h1>
             <p>Drink Products</p>
             <p>RM12</p>
-            <button onclick="addToCart('Home Soy', 12.00, '/product/drinks/homesoy.jpg')">Add to Cart</button>
+            <button onclick="addcart('Home Soy', 12.00, '/product/drinks/homesoy.jpg')">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img class="product.img" src="/product/drinks/milo.png" alt="milo-img">
+            <img class="product.img" src="product/drinks/milo.png" alt="milo-img">
             <h1>Milo</h1>
             <p>Drink Products</p>
             <p>RM15.99</p>
-            <button onclick="addToCart('Milo', 15.99, '/product/drinks/milo.png')">Add to Cart</button>
+            <button onclick="addcart('Milo', 15.99, 'product/drinks/milo.png')">Add to Cart</button>
         </div>
 
         <div class="card">
-            <img class="product.img" src="/product/drinks/nestum.png" alt="nestum-img">
+            <img class="product.img" src="product/drinks/nestum.png" alt="nestum-img">
             <h1>Nestum</h1>
             <p>Drink Products</p>
             <p>RM9.70</p>
-            <button onclick="addToCart('Nestum', 9.70, '/product/drinks/nestum.png')">Add to Cart</button>
+            <button onclick="addcart('Nestum', 9.70, 'product/drinks/nestum.png')">Add to Cart</button>
         </div>
 
         <div class="card">
@@ -172,7 +172,7 @@
         <h1>Hansung passion fruit hanrabong tea</h1>
         <p>Korean-Fair Products</p>
         <p>RM15.00</p>
-        <button onclick="addToCart('Hansung passion fruit hanrabong tea', 15.00, '/product/drinks/hansung passion fruit hanrabong tea.jpg')">Add to Cart</button>
+        <button onclick="addcart('Hansung passion fruit hanrabong tea', 15.00, '/product/drinks/hansung passion fruit hanrabong tea.jpg')">Add to Cart</button>
     </div>
 
     <div class="card">
@@ -180,7 +180,7 @@
         <h1>Hansung jujube honey tea</h1>
         <p>Korean-Fair Products</p>
         <p>RM15.00</p>
-        <button onclick="addToCart('Hansung jujube honey tea', 15.00, '/product/drinks/hansung jujube honey tea.jpg')">Add to Cart</button>
+        <button onclick="addcart('Hansung jujube honey tea', 15.00, '/product/drinks/hansung jujube honey tea.jpg')">Add to Cart</button>
     </div>
     </div>
 
@@ -194,9 +194,9 @@
 <footer>
     <div class="inner-footer">
         <div class="social-link">
-            <a href="#"><img src="/icon/facebook.png" alt="facebook"></a>
-            <a href="#"><img src="/icon/twitter-sign.png" alt="twitter"></a>
-            <a href="#"><img src="/icon/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="icon/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="icon/twitter-sign.png" alt="twitter"></a>
+            <a href="#"><img src="icon/instagram.png" alt="instagram"></a>
         </div>
         <div class="quick-links">
             <ul>
