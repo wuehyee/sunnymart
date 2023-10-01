@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+.payment-header{
+    font-size: 26px;
+    text-align:center;
+    margin-top:35px;
+}
+
+
+.payment {
+    max-width: 700px;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom:50px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display:flex;
+    justify-content:space-between;
+    padding:50px;
+    font-size:20px;
+  }
+
+  .payment h2 {
+    text-align: center; /* Center the text horizontally */
+    margin: 0; /* Remove any default margins */
+    padding: 10px 0; /* Add some spacing above and below the heading */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+  .payment form {
+    flex: 1;
+  }
+
+  .payment form img{
+    width: 50px;
+    height: auto;
+  }
+
+  .addressinfo{
+    margin-left:70px;
+    margin-right:50px;
+  }
+
+  .payment form input[type="text"] {
+    width: 100%; /* Set the input width to 100% of its container */
+    padding: 5px; /* Add some padding for spacing inside the input */
+    margin:10px;
+    font-size:16px;
+}
+
+.payment form input[type="email"] {
+    width: 100%; /* Set the input width to 100% of its container */
+    padding: 5px; /* Add some padding for spacing inside the input */
+    margin:10px;
+    font-size:16px;
+}
+
+/* Style for the container of the dropdown */
+.state-button {
+    margin-top: 10px;
+}
+
+/* Style for the dropdown select element */
+.state-button select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left:10px;
+    font-size: 16px;
+    border: 1px solid grey;
+    background-color: #fff;
+}
+
+/* Style for the dropdown options */
+.state-button select option {
+    padding: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+
+#cvv {
+    width:15%;
+}
+
+#exp-month, #exp-year{
+    width:30%;
+}
+
+
+#reqbox {
+    margin-top:10px;
+    padding:10px;
+    width: 250px;
+    height: 100px;
+    /* Add other styles as needed */
+    resize: none; /* To prevent resizing */
+}
+
+::placeholder{
+    color: grey;
+}
+
+.paymentdone-button{
+    background-color: #FDD077;
+    padding:20px;
+    margin-top:40px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-style: 1px;
+    border-color: #FDD077;
+    cursor:pointer;
+}
+
+.product-button{
+    cursor: pointer;
+    background-color: antiquewhite;
+    margin-left:30px;
+    margin-top:30px;
+    margin-bottom:1px;
+    height:50px;
+    width:180px;
+    font-size: 18px;
+    font-style:italic;
+    border-color: chocolate;
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+  
+  .product-button:hover{
+    opacity:1;
+  }

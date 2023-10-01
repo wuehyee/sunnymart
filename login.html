@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="login.css"/>
+
+
+    <title>Sunny Mart</title>
+</head>
+<body>
+    <a href="index.html" class="closebtn"><img src="/icon/close.png" alt="close-btn" ></a>
+    <div class="login-form">
+        <h1>Login</h1>
+        <div class="input">
+            <input type="text" id="emailInput" placeholder="Email address">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="password" id="passwordInput" placeholder="Password" required>
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div class="input">
+            <button class="login-button" onclick="validateForm()">Login</button>
+        </div>
+        <div class="container">
+            <div class="forgot-pwd">
+                <a href="forgotpassword.html">Forgot Password?</a>
+            </div>
+        </div>
+        <div class="register">
+            <a href="register.html">Create new account</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>

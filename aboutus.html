@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="sm_base.css"/>
+    <link rel="stylesheet" href="sm_styles.css"/>
+    <link rel="stylesheet" href="aboutus.css"/>
+
+    <title>Sunny Mart</title>
+
+</head>
+
+<body>
+    <header>
+
+        <!-- logo -->
+        <div class="logo-container">
+            <img src="/icon/logo.png" alt="Sunny Mart logo">
+        </div>
+
+        <!-- search bar -->
+        <div class="search-container">
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><img src="/icon/search.png" alt="search-btn"></button>
+            </form>
+        </div>
+
+        <script src="search.js"></script>
+
+        <!--user icon to display form-->
+        <div class="user-container">
+            <a href="#" onmouseover="showForm()" onmouseout="hideForm()"><img src="/icon/user.png" alt="user"></a>
+            <div id="user-form" class="user-form" onmouseover="showForm()" onmouseout="hideForm()">
+                <ul>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="orderhistory.html">Order History</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback Review</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log In</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function showForm() {
+                document.getElementById("user-form").style.display = "block";
+            }
+            function hideForm() {
+                document.getElementById("user-form").style.display = "none";
+            }
+        </script>
+    </header>
+
+    <!--menu bar-->
+    <div class="navBar">
+        <nav class="navItem">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                    <ul>
+                        <li><a href="frozen.html">Frozen</a></li>
+                        <li><a href="vegetable.html">Vegetable</a></li>
+                        <li><a href="fruit.html">Fruit</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                        <li><a href="cleaningPro.html">Cleaning Products</a></li>
+                        <li><a href="personalCare.html">Personal Care</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="promotion.html">Promotion</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--notification icon-->
+        <div class="Notification">
+            <a href="Notification.html">
+            <img src="/icon/bell.png" alt="bell">
+            </a>
+        </div>
+
+        <!--audio icon-->
+        <div class="Audio">
+            <img src="/icon/AudioOn.png" alt="" id="audioImage">
+            <audio id="audioPlayer" src="Brown Sugar.mp3" preload="auto"></audio>
+        </div>
+
+        <script src="notification.js"></script>
+
+        <!--add to cart-->
+        <div class="addtocart">
+            <a href="cart.html">
+                <img src="/icon/addtocart.png" alt="add to cart">
+            </a>
+        </div>
+    </div>
+    <!----------------------------------------------------  Page Content ------------------------------------------------------->
+    <div class="about_us">
+        <img src="/aboutus/about-us-green.jpg" alt="Sunny Mart Logo"/>
+    </div>
+
+    <p style="text-align: center; font-size: 40px; padding: 30px;">
+        <i>“Selling anything under the sun! Radiating amazing
+        deals for every desire.”</i>
+    </p>
+   
+    <div class="our_mart">
+        <h2 style="text-align: center;">Our Mart</h2>
+        <div class="content">
+            <div class="picture">
+            <img src="/aboutus/grocery_photo1.jpg" alt="Grocery Store">
+            </div>
+            <p>
+                SUNNY MART is a store that offers both online and physical services. You can find our stores offline, conveniently located near residential areas. So, don't worry about inconvenience when running your grocery errands. Feeling too lazy to step out? No worries! You can simply order at your fingertips.
+            </p>
+            <p>
+                What can you find in our stores? From fresh vegetables and fruits to cutting-edge electronic devices, we've got it all covered!
+            </p>
+
+            <div class="picture2">
+                <img src="/aboutus/lets-go-green.jpg" alt="Grocery Store">
+            </div>
+            <p>  
+                Our goal of sustainability aligns perfectly with our mission of 'Grow Together.' ESG (Environmental, Social, and Governance) forms the core concept in managing our stores and establishing our core values. 'E' represents our commitment to the environment. We are an eco-friendly driven company, striving to reduce our carbon footprint by using EVs for deliveries and employing biodegradable packaging for our products. Our mission is in line with international net zero goals.
+            </p>
+            <p>
+                For the 'S' - the social aspect, we recognize the importance of giving back to society. Therefore, we prioritize employing local individuals in our stores to bolster the local economy.
+            </p>
+            <p>
+                Lastly, 'G' stands for governance. We maintain transparency in our governance practices and publish annual impact reports on our website. This allows consumers to understand their spending's impact and how we utilize resources for a sustainable future for all.
+            </p>
+        </div>
+    </div>
+  
+
+    <div class="membership">
+        <h2 style="text-align: center;">Membership</h2>
+        <p>As a member of Sunny mart, you van enjoy special offers, functions that are exclusively offered to a non-member customer.</p>
+        <p>There are some benefits if you join as a member:</p>
+        <ul>
+            <li>- Ensuring the safety protection of your personal information</li>
+            <li>- Easily monitor your order status </li>
+            <li>- Keep track of your member points accumulation</li>
+            <li>- Enjoy various exclusive rewards and benefits</li>
+        </ul>
+        
+        <p><b>Terms and conditions applied.</b></p>
+        <p style="text-align: center; font-size: 30px; text-indent: 0%;"><i>Sign Up as a Sunny Mart member from today!</i></p>
+    </div>
+
+    <div class="map">
+        <h2 style="text-align: center;">Our Store's Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.760984528147!2d100.28229957498445!3d5.45320519452633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac2c0305a5483%3A0xfeb1c7560c785259!2sTAR%20UMT%20Penang%20Branch!5e0!3m2!1sen!2smy!4v1696106803272!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script>
+        function showMarkerInfo(markerName) {
+            alert("You clicked " + markerName);
+        }
+    </script>
+<!----------------------------------------------------- Footer ----------------------------------------------------------->
+
+<footer>
+    <div class="inner-footer">
+        <div class="social-link">
+            <a href="#"><img src="/icon/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/icon/twitter-sign.png" alt="twitter"></a>
+            <a href="#"><img src="/icon/instagram.png" alt="instagram"></a>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li class="quick-item"><a href="index.html">Home</a></li>
+                <li class="quick-item"><a href="aboutus.html">About Us</a></li>
+                <li class="quick-item"><a href="product.html">Products</a></li>
+                <li class="quick-item"><a href="promotion.html">Promotion</a></li>
+                <li class="quick-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="outer-footer">
+        &#127969; 77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang &#128222; 04-899 5230
+    </div>
+</footer>
+</body>
+</html>

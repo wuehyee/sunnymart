@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        New Perspectives on HTML5 and CSS3, &th Edition
+        HTML Assignment
+
+        Sunny Mart
+        Author : Wong Jin Huei
+        Date   : 10 August 2023
+
+        Filename: register.html
+    -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="register.css"/>
+
+
+    <title>Sunny Mart</title>
+</head>
+<body>
+    <a href="index.html" class="closebtn"><img src="/icon/close.png" alt="close-btn" ></a>
+    <div class="register-form">
+        <h1>Sign Up</h1>
+        <div class="input">
+            <input type="text" placeholder="Username" required>
+            <span id="usernameError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Full Name" required>
+            <span id="fullNameError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="tel" placeholder="Phone Number:+60xxxxxxxxx" required>
+            <span id="telError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Email address" required>
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Address" required>
+            <span id="addressError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="password" placeholder="Password" required>
+            <span id="pwdError" class="error"></span>
+        </div>
+        <div class="input">
+            <input type="password" placeholder="Confirm password" required>
+            <span id="confirmpwdError" class="error"></span>
+        </div>
+        <div class="input">
+            <button class="register-button" onclick="validateSignUp()">Sign Up</button>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>

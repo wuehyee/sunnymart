@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="sm_base.css"/>
+    <link rel="stylesheet" href="sm_styles.css"/>
+    <link rel="stylesheet" href="faq.css"/>
+
+    <title>Sunny Mart</title>
+
+</head>
+
+<body>
+    <header>
+
+        <!-- logo -->
+        <div class="logo-container">
+            <img src="/icon/logo.png" alt="Sunny Mart logo">
+        </div>
+
+        <!-- search bar -->
+        <div class="search-container">
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><img src="/icon/search.png" alt="search-btn"></button>
+            </form>
+        </div>
+
+        <script src="search.js"></script>
+
+        <!--user icon to display form-->
+        <div class="user-container">
+            <a href="#" onmouseover="showForm()" onmouseout="hideForm()"><img src="/icon/user.png" alt="user"></a>
+            <div id="user-form" class="user-form" onmouseover="showForm()" onmouseout="hideForm()">
+                <ul>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="orderhistory.html">Order History</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback Review</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log In</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function showForm() {
+                document.getElementById("user-form").style.display = "block";
+            }
+            function hideForm() {
+                document.getElementById("user-form").style.display = "none";
+            }
+        </script>
+    </header>
+
+    <!--menu bar-->
+    <div class="navBar">
+        <nav class="navItem">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                    <ul>
+                        <li><a href="frozen.html">Frozen</a></li>
+                        <li><a href="vegetable.html">Vegetable</a></li>
+                        <li><a href="fruit.html">Fruit</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                        <li><a href="cleaningPro.html">Cleaning Products</a></li>
+                        <li><a href="personalCare.html">Personal Care</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="promotion.html">Promotion</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--notification icon-->
+        <div class="Notification">
+            <a href="Notification.html">
+            <img src="/icon/bell.png" alt="bell">
+            </a>
+        </div>
+
+        <!--audio icon-->
+        <div class="Audio">
+            <img src="/icon/AudioOn.png" alt="" id="audioImage">
+            <audio id="audioPlayer" src="Brown Sugar.mp3" preload="auto"></audio>
+        </div>
+
+        <script src="notification.js"></script>
+
+        <!--add to cart-->
+        <div class="addtocart">
+            <a href="cart.html">
+                <img src="/icon/addtocart.png" alt="add to cart">
+            </a>
+        </div>
+    </div>
+    <!----------------------------------------------------  Page Content ------------------------------------------------------->
+    <img src = "/faq/faq-green.jpg" alt="FAQ"/>   
+    
+        <div class="faq">
+        <h1>Commonly Asked Question</h1>
+        <div class="Commonly Asked Question">
+            <button class="question">        
+                How Can I change my address?
+                <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+                    <p>To do so, click into <b> My profile </b> > Select <b> My Addresses </b> > Select <b>Add New Address</b> </p>
+                    <p>Take note that, you may alaso set the new address as a <b>default</b> address.</p>
+            </div>
+        </div>
+
+        <div class="Commonly Asked Question">
+            <button class="question">        
+              How Can I change my personal information?
+              <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+              <p>To do so, click into <b> My profile </b> > Select personal information that you wish to change.</p>
+            </div>
+        </div>
+              
+        <div class="Commonly Asked Question">
+            <button class="question">        
+              I forgot my Password for my account. What should I do to retrive it?
+              <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+                <p>
+                    <ol>
+                        <li>Click on <b>"Forgot Password"</b> and fill your email that used to register the account.</li><br>
+                        <li>Click Submit.</li><br>
+                        <li>A verification code will be send to your email. Once you have received the code, you may change update your password.</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+        <div class="Commonly Asked Question">
+            <button class="question">        
+            How do I check the status of my order?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>You can track your orders by going to the <b>"My Purchases"</b> section under the <b>"Me"</b> tab in the Sunny Mart Website. Your orders are organized based on their current stauts:
+                <ul>
+                    <li><b>To Pay - </b> Waiting for the payment.</li><br>
+                    <li><b>To Ship - </b> Waiting for the seller to prepare your order shipment.</li><br>
+                    <li><b>To Receive - </b> Your order has been shipped and are on the way to you. </li><br>
+                    <li><b>Completed - </b> Your order has been successfully delivered.</li><br>
+                    <li><b>Canceled - </b>Your order has been canceled. </li><br>
+                    <li><b>Return/Refund - </b> Order that has been return/refund.</li>
+                </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="Commonly Asked Question">
+            <button class="question">        
+            What time can I collect my orders?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>Customers are available to collect their orders during operating hour.</p>
+            </div>
+        </div>
+
+        <h1>Contact Us</h1>
+        <div class="Contact Us">
+            <button class="question">        
+              How to contact Sunny Mart?
+                <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+              <p>You may contact us by <a href="tel
+                +604-7456533">04-7456533</a> or email to us <a 
+                href="mailto:sunnymart@email.com">sunnymart@email
+                com</a> </p>
+            </div>
+        </div>
+        
+
+        <h1>Membership</h1>
+        <div class="Membership">
+            <button class="question">        
+            How long is my membership valid?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>A sunny mart membership is valid for <b>one year</b> from the time application is processed.</p>
+            </div>
+        </div>
+
+        <div class="Membership">
+            <button class="question">        
+            How can I become a member of Sunny Mart?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>New members join online using the website.Note that you will first create an account with an valid 
+            email address by selecting <b>'Register'</b>. You may also required to filled up your personal 
+            information.</p>
+            </div>
+        </div>
+
+        <div class="Membership">
+            <button class="question">        
+            How long does it take for a membership to become active?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>It may take up to <i>24 hours</i> for membership to become active when joining or renewing online
+            </p>
+            </div>
+        </div>
+
+        <div class="Membership">
+            <button class="question">        
+            How much does Sunny Mart membership cost?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>You may need to pay <i>RM 10.00</i> for one year membership of Sunny Mart.</p>
+            </div>
+        </div>
+       
+        <div class="Membership">
+            <button class="question">        
+            What are the benefits if I join as a member of Sunny Mart?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>
+                <ul style="list-style-type:disc">
+                  <li>As a first-time member, you will receive a <b><i>20%</i></b> discount on your first-time
+                  purchase.</li>
+                  <li>As a member, you may accumulate member points as <b>RM1 = 1 member point</b>.</li>
+                  <li>As a member, you may redeem your member points as <b>RM1 = 100 member points</b>.</li>
+                  <li>As a member, you may enjoy various exclusive rewards and benefits from the points that
+                  you accumulated from the previos orders.</li>
+                  <li>As a member, you may enjoy special discounts/offers during our promotion day that are
+                  exclusively offered to a non-member customer. </li>
+                  <li>As a member, you may keep track of your order status easily through online.</li>
+                  <li>As a member, your personal informations are secured within the system.</li>
+                </ul>
+            </p>
+            </div>
+        </div>
+
+        <div class="Membership">
+            <button class="question">        
+            How can I cancel my membeship?
+            <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+            <p>Members can cancel their membership within <i>30 days</i> of joining or renewing for a full return/ refund. After 30 days, no redunf will be issued.</p>
+            </div>
+        </div>
+
+
+        <h1>Payment Method</h1>
+        <div class="Payment Method">
+            <button class="question">        
+              What are the payment methods available?
+                <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+              <p>Payment methods that are available in Sunny Mart Website are:-</p>
+              <ul>
+                  <li><b>Credit Card / Debit Card</b></li>
+                  <li><b>Bank Transfer</b></li>
+                  <li><b>Touch N Go</b></li>
+              </ul>
+            </div>
+        </div>
+
+        <h1>Return Refund</h1>
+        <div class="Return Refund">
+          <button class="question">        
+            If I cancel my order, how can I get my refund?
+              <i class ="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="answer">
+            <p>Refund amount will be automatically return into customer's bank account upon the cancellations date. Customers can get their return amount within <b>7-21 days</b>.</p>
+          </div>
+
+          <div class="Return Refund">
+            <button class="question">        
+              What happened if I didn't get my order?
+                <i class ="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="answer">
+              <p>Customers can upload their evidence to the customer service and our customer service may assist you.</p>
+            </div>
+
+      </div>
+      
+        <script>
+          var questions = document.getElementsByClassName("question");
+          var i;
+    
+          for (i = 0; i < questions.length; i++) {
+            questions[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              this.parentElement.classList.toggle("active");
+    
+              var answer = this.nextElementSibling;
+    
+              if (answer.style.display === "block") {
+                answer.style.display = "none";
+              } else {
+                answer.style.display = "block";
+              }
+            });
+          }
+        </script>
+        </div>
+    </div>
+
+<!----------------------------------------------------- Footer ----------------------------------------------------------->
+
+<footer>
+    <div class="inner-footer">
+        <div class="social-link">
+            <a href="#"><img src="/icon/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/icon/twitter-sign.png" alt="twitter"></a>
+            <a href="#"><img src="/icon/instagram.png" alt="instagram"></a>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li class="quick-item"><a href="index.html">Home</a></li>
+                <li class="quick-item"><a href="aboutus.html">About Us</a></li>
+                <li class="quick-item"><a href="product.html">Products</a></li>
+                <li class="quick-item"><a href="promotion.html">Promotion</a></li>
+                <li class="quick-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="outer-footer">
+        &#127969; 77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang &#128222; 04-899 5230
+    </div>
+</footer>
+</body>
+</html>

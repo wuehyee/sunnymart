@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="sm_base.css"/>
+    <link rel="stylesheet" href="sm_styles.css"/>
+    <link rel="stylesheet" href="product.css"/>
+
+    <title>Sunny Mart</title>
+
+</head>
+
+<body>
+    <header>
+
+        <!-- logo -->
+        <div class="logo-container">
+            <img src="/icon/logo.png" alt="Sunny Mart logo">
+        </div>
+
+        <!-- search bar -->
+        <div class="search-container">
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><img src="/icon/search.png" alt="search-btn"></button>
+            </form>
+        </div>
+
+        <script src="search.js"></script>
+
+        <!--user icon to display form-->
+        <div class="user-container">
+            <a href="#" onmouseover="showForm()" onmouseout="hideForm()"><img src="/icon/user.png" alt="user"></a>
+            <div id="user-form" class="user-form" onmouseover="showForm()" onmouseout="hideForm()">
+                <ul>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="orderhistory.html">Order History</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback Review</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log In</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function showForm() {
+                document.getElementById("user-form").style.display = "block";
+            }
+            function hideForm() {
+                document.getElementById("user-form").style.display = "none";
+            }
+        </script>
+    </header>
+
+    <!--menu bar-->
+    <div class="navBar">
+        <nav class="navItem">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="product.html">Products</a>
+                    <ul>
+                        <li><a href="frozen.html">Frozen</a></li>
+                        <li><a href="vegetable.html">Vegetable</a></li>
+                        <li><a href="fruit.html">Fruit</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                        <li><a href="cleaningPro.html">Cleaning Products</a></li>
+                        <li><a href="personalCare.html">Personal Care</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="promotion.html">Promotion</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--notification icon-->
+        <div class="Notification">
+            <a href="Notification.html">
+            <img src="/icon/bell.png" alt="bell">
+            </a>
+        </div>
+
+        <!--audio icon-->
+        <div class="Audio">
+            <img src="/icon/AudioOn.png" alt="" id="audioImage">
+            <audio id="audioPlayer" src="Brown Sugar.mp3" preload="auto"></audio>
+        </div>
+
+        <script src="notification.js"></script>
+
+        <!--add to cart-->
+        <div class="addtocart">
+            <a href="cart.html">
+                <img src="/icon/addtocart.png" alt="add to cart">
+            </a>
+        </div>
+    </div>
+    <!----------------------------------------------------  Page Content ------------------------------------------------------->
+
+    <div class="products">
+        <div class="card">
+            <img class="product.img" src="/product/all/chicken.jpg" alt="chicken-img">
+            <h1>Whole Chicken</h1>
+            <p>Meat Products</p>
+            <p>RM15.00</p>
+            <button onclick="addToCart('Fresh Whole Chicken', 15.00, '/product/all/chicken.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/beef.jpg" alt="beef-img">
+            <h1>Beef</h1>
+            <p>Meat Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Beef', 20.00, '/product/all/beef.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/groundbeef.jpg" alt="groundbeef-img">
+            <h1>Ground Beef</h1>
+            <p>Meat Products</p>
+            <p>RM19.00</p>
+            <button onclick="addToCart('Ground Beef', 19.00, '/product/all/groundbeef.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/lamb.jpg" alt="lamb-img">
+            <h1>Lamb</h1>
+            <p>Meat Products</p>
+            <p>RM25.00</p>
+            <button onclick="addToCart('Lamb', 25.00, '/product/all/lamb.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/salmon.jpg" alt="salmon-img">
+            <h1>Salmon Fillet</h1>
+            <p>Seafood Products</p>
+            <p>RM22.90</p>
+            <button onclick="addToCart('Chilled Salmon Fillet', 22.90, '/product/all/salmon.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/prawns.jpg" alt="prawn-img">
+            <h1>Prawns</h1>
+            <p>Seafood Products</p>
+            <p>RM12</p>
+            <button onclick="addToCart('Prawns', 12.00, '/product/all/prawns.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/crab.jpg" alt="crab-img">
+            <h1>Crabs</h1>
+            <p>Seafood Products</p>
+            <p>RM29.90</p>
+            <button onclick="addToCart('Crabs', 29.90, '/product/all/crab.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/codfish.jpg" alt="codfish-img">
+            <h1>Cod Fish</h1>
+            <p>Seafood Products</p>
+            <p>RM12.40</p>
+            <button onclick="addToCart('Cod Fish', 12.40, '/product/all/codfish.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/broccoli.jpg" alt="broccoli-img">
+            <h1>Broccoli</h1>
+            <p>Vegetable Products</p>
+            <p>RM3.20</p>
+            <button onclick="addToCart('Broccoli', 3.20, '/product/all/broccoli.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/redpepper.jpg" alt="redpepper-img">
+            <h1>Red Peppers</h1>
+            <p>Vegetable Products</p>
+            <p>RM4.60</p>
+            <button onclick="addToCart('Red Pepper', 4.60, '/product/all/redpepper.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/cabbage.jpg" alt="cabbage-img">
+            <h1>Cabbages</h1>
+            <p>Vegetables Products</p>
+            <p>RM5.90</p>
+            <button onclick="addToCart('Cabbages', 5.90, '/product/all/cabbage.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/onion.jpg" alt="onion-img">
+            <h1>Onions</h1>
+            <p>Vegetable Products</p>
+            <p>RM6.40</p>
+            <button onclick="addToCart('Onions', 6.40, '/product/all/onion.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/apples.jpg" alt="apples-img">
+            <h1>Apples</h1>
+            <p>Fruit Products</p>
+            <p>RM5.00</p>
+            <button onclick="addToCart('Apples', 5.00, '/product/all/apples.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/bananas.jpg" alt="bananas-img">
+            <h1>Bananas</h1>
+            <p>Fruit Products</p>
+            <p>RM6.00</p>
+            <button onclick="addToCart('Bananas', 4.60, '/product/all/bananas.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/oranges.jpg" alt="cabbage-img">
+            <h1>Oranges</h1>
+            <p>Fruit Products</p>
+            <p>RM5.90</p>
+            <button onclick="addToCart('Oranges', 5.90, '/product/all/oranges.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/mangoes.jpg" alt="onion-img">
+            <h1>Mangoes</h1>
+            <p>Fruit Products</p>
+            <p>RM6.40</p>
+            <button onclick="addToCart('Mangoes', 6.40, '/product/all/mangoes.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/bundaberg lemon lime & bitter.png" alt="bundaberg-img">
+            <h1>Bundaberg lemon lime & bitter</h1>
+            <p>Drink Products</p>
+            <p>RM6.50</p>
+            <button onclick="addToCart('Bundaberg lemon lime & bitter', 6.50, '/product/all/bundaberg lemon lime & bitter.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/coke.png" alt="coke-img">
+            <h1>Coke</h1>
+            <p>Drink Products</p>
+            <p>RM2.00</p>
+            <button onclick="addToCart('Coke', 2.00, '/product/all/coke.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/hundredplus.png" alt="hundredplus-img">
+            <h1>100 Plus</h1>
+            <p>Drink Products</p>
+            <p>RM2.00</p>
+            <button onclick="addToCart('100 Plus', 2.00, '/product/all/hundredplus.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/homesoy.jpg" alt="homesoy-img">
+            <h1>Home Soy</h1>
+            <p>Drink Products</p>
+            <p>RM12</p>
+            <button onclick="addToCart('Home Soy', 12.00, '/product/all/homesoy.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/milo.png" alt="milo-img">
+            <h1>Milo</h1>
+            <p>Drink Products</p>
+            <p>RM15.99</p>
+            <button onclick="addToCart('Milo', 15.99, '/product/all/milo.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/nestum.png" alt="nestum-img">
+            <h1>Nestum</h1>
+            <p>Drink Products</p>
+            <p>RM9.70</p>
+            <button onclick="addToCart('Nestum', 9.70, '/product/all/nestum.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/broom.png" alt="broom-img">
+            <h1>Broom</h1>
+            <p>Cleaning Products</p>
+            <p>RM8.90</p>
+            <button onclick="addToCart('Broom', 8.90, '/product/all/broom.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/clorox.png" alt="clorox-img">
+            <h1>Clorox</h1>
+            <p>Cleaning Products</p>
+            <p>RM10.75</p>
+            <button onclick="addToCart('Clorox', 10.75, '/product/all/clorox.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/dustpan.jpg" alt="dustpan-img">
+            <h1>Dustpan</h1>
+            <p>Cleaning Products</p>
+            <p>RM3.90</p>
+            <button onclick="addToCart('Dustpan', 3.90, '/product/all/dustpan.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/garbageBag.png" alt="garbageBag-img">
+            <h1>Garbage Bag</h1>
+            <p>Cleaning Products</p>
+            <p>RM6.40</p>
+            <button onclick="addToCart('garbageBag', 6.40, '/product/all/garbageBag.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/glove.png" alt="glove-img">
+            <h1>Glove</h1>
+            <p>Cleaning Products</p>
+            <p>RM5.00</p>
+            <button onclick="addToCart('Glove', 5.00, '/product/all/glove.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/liquid.png" alt="liquid-img">
+            <h1>Liquid</h1>
+            <p>Cleaning Products</p>
+            <p>RM6.00</p>
+            <button onclick="addToCart('Liquid', 6.00, '/product/all/liquid.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/toiletBrush.png" alt="toiletBrush-img">
+            <h1>Toilet Brush</h1>
+            <p>Cleaning Products</p>
+            <p>RM5.90</p>
+            <button onclick="addToCart('Toilet Brush', 5.90, '/product/all/toiletBrush.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/waterWiper.png" alt="waterWiper-img">
+            <h1>Water Wiper</h1>
+            <p>Cleaning Products</p>
+            <p>RM3.40</p>
+            <button onclick="addToCart('Water Wiper', 3.40, '/product/all/waterWiper.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/comb.png" alt="comb-img">
+            <h1>Comb</h1>
+            <p>PersonalCare Products</p>
+            <p>RM5.90</p>
+            <button onclick="addToCart('Comb', 5.90, '/product/all/comb.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/Lifebuoy.png" alt="Lifebuoy-img">
+            <h1>Lifebuoy</h1>
+            <p>PersonalCare Products</p>
+            <p>RM13.40</p>
+            <button onclick="addToCart('Lifebuoy', 13.40, '/product/all/Lifebuoy.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/Listerine.png" alt="Listerine-img">
+            <h1>Listerine</h1>
+            <p>PersonalCare Products</p>
+            <p>RM25.00</p>
+            <button onclick="addToCart('Listerine', 25.00, '/product/all/Listerine.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/sunsilk.png" alt="sunsilk-img">
+            <h1>Sunsilk</h1>
+            <p>PersonalCare Products</p>
+            <p>RM10.00</p>
+            <button onclick="addToCart('Sunsilk', 10.00, '/product/all/sunsilk.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/toothbrush.png" alt="toothbrush-img">
+            <h1>Toothbrush</h1>
+            <p>PersonalCare Products</p>
+            <p>RM5.90</p>
+            <button onclick="addToCart('Toothbrush', 5.90, '/product/all/toothbrush.png')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img class="product.img" src="/product/all/toothPaste.jpg" alt="toothPaste-img">
+            <h1>ToothPaste</h1>
+            <p>PersonalCare Products</p>
+            <p>RM10.40</p>
+            <button onclick="addToCart('ToothPaste', 10.40, '/product/all/toothPaste.jpg')">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="product.img" src="/product/all/pandan custard.jpg" alt="pandan custard-img">
+            <h1>Pandan custard</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Pandan custard', 20.00, '/product/all/pandan custard.jpg')">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="product.img" src="/product/all/peachy mango.jpg" alt="peachy mango-img">
+            <h1>Peachy mango</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Peachy mango', 20.00, '/product/all/peachy mango.jpg')">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="product.img" src="/product/all/ultimate musang king mooncake.jpg" alt="ultimate musang king mooncake-img">
+            <h1>Ultimate musang king mooncake</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Ultimate musang king mooncake', 20.00, '/product/all/ultimate musang king mooncake.jpg')">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="product.img" src="/product/all/Assorted Nuts Green Tea Mooncake.jpg" alt="Assorted Nuts Green Tea Mooncake-img">
+            <h1>Assorted Nuts Green Tea Mooncake</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Assorted Nuts Green Tea Mooncake', 20.00, '/product/all/Assorted Nuts Green Tea Mooncake.jpg')">Add to Cart</button>
+        </div>
+    
+        <div class="card">
+            <img class="product.img" src="/product/all/baked black sesame,lotus & melon seed mooncake.jpg" alt="baked black sesame,lotus & melon seed mooncake-img">
+            <h1>Baked black sesame,lotus & melon seed mooncake</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Baked black sesame,lotus & melon seed mooncake', 20.00, '/product/all/baked black sesame,lotus & melon seed mooncake.jpg')">Add to Cart</button>
+        </div>
+    
+        <div class="card">
+            <img class="product.img" src="/product/all/baked mixed nuts mooncake.jpg" alt="baked mixed nuts mooncake-img">
+            <h1>Baked mixed nuts mooncake</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Baked mixed nuts mooncake', 20.00, '/product/all/baked mixed nuts mooncake.jpg')">Add to Cart</button>
+        </div>
+    
+        <div class="card">
+            <img class="product.img" src="/product/all/golden moon - pandan flavour with single egg yolk mooncake [alcohol].jpg" alt="Golden moon-img">
+            <h1>Golden moon-pandan mooncake[alcohol]</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Golden moon-pandan mooncake[alcohol]', 20.00, '/product/all/golden moon - pandan flavour with single egg yolk mooncake [alcohol].jpg')">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img class="product.img" src="/product/all/Tea Egg Mooncake.jpg" alt="Tea Egg Mooncake-img">
+            <h1>Tea Egg Mooncake</h1>
+            <p>Mooncake Products</p>
+            <p>RM20.00</p>
+            <button onclick="addToCart('Tea Egg Mooncake', 20.00, '/product/all/Tea Egg Mooncake.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <a href="cart.html"><button class="checkout">Check Out >> </button></a>
+
+    <script src="product.js"></script>
+    <script src="cart.js"></script> 
+
+<!----------------------------------------------------- Footer ----------------------------------------------------------->
+
+<footer>
+    <div class="inner-footer">
+        <div class="social-link">
+            <a href="#"><img src="/icon/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/icon/twitter-sign.png" alt="twitter"></a>
+            <a href="#"><img src="/icon/instagram.png" alt="instagram"></a>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li class="quick-item"><a href="index.html">Home</a></li>
+                <li class="quick-item"><a href="aboutus.html">About Us</a></li>
+                <li class="quick-item"><a href="product.html">Products</a></li>
+                <li class="quick-item"><a href="promotion.html">Promotion</a></li>
+                <li class="quick-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="outer-footer">
+        &#127969; 77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang &#128222; 04-899 5230
+    </div>
+</footer>
+</body>
+</html>

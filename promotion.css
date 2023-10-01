@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+
+
+video {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text h1 {
+  color: white;
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
+.mooncake-promo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mooncake-promo img {
+  width: 60%;
+  margin-top: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.mooncake-promo h1 {
+  font-size: x-large;
+  font-style: oblique;
+  margin-bottom: 10px;
+  color: #6b2b0b;
+}
+
+.mooncake-promo p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mooncake-promo .button {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  background-color: #000000e9;
+  padding: 15px 80px;
+  border-radius: 50px;
+  margin-left: 20%;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.mooncake-promo .button:hover {
+  background-color: #00d500e9;
+}
+
+.container{
+  display: flex;
+}
+
+.image-container {
+  display: block;
+  margin: auto;
+  padding:20px;
+  text-align: center;
+}
+
+.image-container img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.image-container h1 {
+  font-size: x-large;
+  font-style: oblique;
+  margin-bottom: 10px;
+  color: #6b2b0b;
+  text-align: center;
+}
+
+.image-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.image-container .find-out-button {
+  background-color: #000000e9;
+  padding: 10px 80px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.image-container .find-out-button:hover {
+  background-color: #00d500e9;
+}

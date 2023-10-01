@@ -1,0 +1,161 @@
+@charset "utf-8";
+/*---------------------------------------------------------*/
+div.about_us img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 5px inset #1c1c1fe4;
+}
+
+
+/* Apply styles to the div classes*/
+div.our_mart{
+    display: block;
+    background-color: white ;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 30px 100px;
+    border: 5px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+div.promotions{
+    display: block;
+    background-color: white ;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 30px 200px;
+    border: 5px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+div.membership{
+    display: block;
+    background-color: white ;
+    max-width: 800px;  
+    padding: 30px 20px;
+    border: 5px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+div.map{
+    display: block;
+    background-color: white ;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 30px 100px;
+    border: 5px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+/*Style the h1 element */
+h1{
+    font-size: 30pt;
+    color: darkgreen;
+}
+
+img{
+    margin: 0 auto;
+    width: 100%;
+    height:30%;
+    display: block;
+  }
+
+
+/*Style the h2 element within the #our_mart section */
+.our_mart h2{
+    font-size: 50px;
+    color: darkgreen;
+}
+
+/*Style the p element within the #our_mart section */
+.our_mart .content p{
+    font-size: 30px;
+    color: #555;
+    text-indent: 50px;
+}
+
+/*Style the image*/
+.our_mart .content .picture img{
+    float: left;
+    margin-right: 20px;  
+    width: 300px;
+    left: 0;
+    top: 0;
+    border-radius: 10%;
+}
+
+/*Style the image*/
+.our_mart .content .picture2 img{
+    float: right;
+    margin-right: 20px;  
+    width: 300px;
+    left: 0;
+    top: 0;
+    border-radius: 10%;
+}
+
+/*Style the h2 element within the #membership section */
+.membership h2{
+    font-size: 50px;
+    color: darkgreen;
+}
+
+/*Style the p element within the #membership section */
+.membership p{
+    font-size: 30px;
+    color: #555;
+    text-indent: 50px;
+}
+
+/*Style the li element within the #membership section */
+.membership {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.membership ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left; 
+}
+
+.membership ul li{
+    margin-left: 20px;
+    position: relative;
+}
+
+.membership ul li i{
+    background-size: 16px 16px;
+    display: inline-block; 
+    width: 8px; 
+    height: 8px; 
+    position: absolute;
+    left: -40px; 
+    top: 0; 
+}
+
+.membership li{
+    font-size: 30px;
+    color: #555;
+    text-indent: 50px;
+}
+
+.map h2{
+    font-size: 50px;
+    color: darkgreen;
+}
+
+div.map img{
+    max-width: 100%;
+    display: block;
+}
+
+.footer {
+    z-index: 2;
+}

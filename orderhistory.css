@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+
+.content {
+   flex: 1; /* Allow the content to expand and fill available space */
+   margin-left:10px;    /*towards right */
+   margin-right:5px;    /*towards left*/
+   padding-left:100px;
+   padding-right:100px;
+   padding-top:100px;
+   padding-bottom:10px;
+}
+
+.content img{
+   padding:12px;
+   margin-left:20px;
+   margin-top:15px;
+   margin-bottom:15px;
+}
+
+.item1 {
+   max-width:100%;
+   width: 170px;;
+   height: 170px;
+   padding:5%;
+}
+
+.item2 {
+   max-width:100%;
+   width: 170px;;
+   height: 170px;
+   padding:5%;
+}
+
+.item3 {
+   max-width:100%;
+   width: 170px;;
+   height: 170px;
+   padding:5%;
+}
+
+.item4 {
+   max-width:100%;
+   width: 170px;;
+   height: 170px;
+   padding:5%;
+}
+
+ul.order-list {
+   border: 1px solid #ddd;
+   background-color: #f7f7f7;
+   height:100%;
+}
+
+li.order-list {
+   display: flex;
+   margin-bottom: 20px;
+   padding: 10px;
+   border: 1px solid #ddd; /* Add a border to the list items */
+}
+
+.custom-border {
+   border-color: lightslategray; /* Customize the border color */
+   border-width: 0.2px; /* Customize the border thickness */
+   border-style: groove; /* Customize the border style */
+   display: grid;
+   align-items: center; 
+   grid-template-columns: 1fr 2fr 1fr;     /*adjust title left right position*/
+   column-gap: 5px;
+}
+
+.item-details {
+   flex: 1; /* Allow the item details to expand and fill available space */
+}
+
+.item-details h3, p {
+   margin: 0; /* Remove default margins */
+   padding-top:7px;
+}
+
+.item-details h3{
+   font-size:20px;
+}
+
+.title{
+   color:grey;
+}
+
+#orderhistory h2{
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+.page-num {         /*adjust position of page num*/
+   display: inline-block;
+   margin: 0 auto;
+   justify-items: center;
+   padding-left:550px;
+   padding-bottom:50px;
+ }
+ 
+.page-num a {
+   color: black;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+   transition: background-color .3s;
+   border: 1px solid #ddd;
+ }
+ 
+.page-num a.active {
+   background-color: #4CAF50;
+   color: white;
+   border: 1px solid #4CAF50;
+ }
+ 
+.page-num a:hover:not(.active) {background-color: #ddd;}

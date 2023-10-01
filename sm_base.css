@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+footer, header, nav { 
+   display: block;
+   z-index:2;        /*make it in front*/
+   position: relative;     /*this too*/
+}
+
+body, div, footer, 
+h1, h2, h3, h4, h5, h6, p, header, html, img, 
+li, nav, nav a, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Set the default page element styles */
+body {
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px, rgb(51, 51, 51) -5px 0px 15px;
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1400px;
+   width: 100%;
+   background-color: #fffcb3a4;
+}
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
